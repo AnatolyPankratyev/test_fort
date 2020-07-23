@@ -12,33 +12,17 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        .login-box {
+            max-width: 600px;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="/">FORT</a>
+<section class="container jumbotron mt-5 pt-3 login-box">
+    <?= $content; ?>
+</section>
 
-        <a href="<?=PATH . '/admin';?>" class="btn btn-warning my-2 my-sm-0">Enter as ADMIN</a>
-    </div>
-</nav>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <?php if(isset($_SESSION['error'])): ?>
-                <div class="alert alert-danger">
-                    <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
-                </div>
-            <?php endif; ?>
-            <?php if(isset($_SESSION['success'])): ?>
-                <div class="alert alert-success">
-                    <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
-                </div>
-            <?php endif; ?>
-        </div>
-    </div>
-</div>
-<?//=debug($_SESSION);?>
-<?= $content; ?>
 
 
 <!-- Optional JavaScript -->
@@ -51,7 +35,7 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/my.js"></script>
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function () {
@@ -72,7 +56,6 @@
         }, false);
     })();
 </script>
-<script src="https://mottie.github.io/tablesorter/dist/js/jquery.tablesorter.min.js"></script>
 </body>
 
 </html>
