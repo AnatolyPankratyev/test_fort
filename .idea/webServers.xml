@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1459a400-a0d4-4932-9f4b-fe3723c1ce18" name="37.140.192.74" url="http://37.140.192.74">
+        <fileTransfer rootFolder="/www/coach-test.online" host="37.140.192.74" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

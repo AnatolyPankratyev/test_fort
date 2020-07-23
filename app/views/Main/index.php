@@ -181,6 +181,10 @@
             </div>
             <hr>
         <?php endif; ?>
+        <?php if (isset($_SESSION['search']) && (empty($_SESSION['search']['name']) && empty($_SESSION['search']['email']) && empty($_SESSION['search']['text']))): ?>
+        <h4>Поиск не дал результатов</h4>
+        <?php unset($_SESSION['search']); ?>
+        <?php endif; ?>
     </div>
     <div class="row">
         <div class="col-lg-6">

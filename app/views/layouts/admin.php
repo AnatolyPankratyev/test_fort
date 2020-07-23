@@ -16,7 +16,7 @@
 <body>
 <nav class="navbar navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="/">BeeJee</a>
+        <a class="navbar-brand" href="/">FORT</a>
 
         <a href="<?=PATH;?>" class="btn btn-warning my-2 my-sm-0">To Start Page</a>
     </div>
@@ -50,7 +50,7 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="/js/my.js"></script>
+<script src="/js/script.js"></script>
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function () {
